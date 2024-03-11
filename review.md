@@ -10,3 +10,6 @@
 
 [78. Subsets](https://leetcode.com/problems/subsets/)
 
+[560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
+
+[287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)

@@ -69,11 +69,9 @@ class Solution:
 
 ### Quick Sort
 
-
-
 Limitation:
 
-+ only use the last element as pivot
++ only used the last element as pivot
 
 ```py
 class Solution:
@@ -107,6 +105,47 @@ class Solution:
 
 
 
+## Sliding windows
+
+Two nested loops
+
+```py
+left = 0
+right = 0
+
+while (left < right and right < len(nums)) {
+    # increase the window size
+    window.append(nums[right]);
+    right++;
+    
+    while (window needs shrink) {
+        # decrease the window size
+        window.remove(nums[left]);
+        left++;
+    }
+}
+```
+
+## Two Pointers
+
+### Fast & Slow pointers
+
+
+
+### Left & Right pointers
+
+
+
+
+
+## BFS
+
+
+
+## DFS
+
+
+
 ## Backtracking
 
 some template
@@ -124,6 +163,4 @@ while(Problem is not solved)
 If none of the move works out, return false, NO SOLUTON.
 ```
 
-## Sliding windows
-
-外层for+内层while
+## 
