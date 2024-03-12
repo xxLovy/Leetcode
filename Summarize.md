@@ -134,7 +134,7 @@ while (left < right and right < len(nums)) {
 
 ### Left & Right pointers
 
-
+Normally it's concerned about some sum up and used for a sorted array.
 
 
 

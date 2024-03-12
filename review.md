@@ -13,3 +13,11 @@
 [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
 
 [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
+
+[15. 3Sum](https://leetcode.com/problems/3sum/)
+
+[11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+
+[42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+
+[713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
