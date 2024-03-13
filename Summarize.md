@@ -122,6 +122,15 @@ for R, x in enumerate(nums):
 
 ## Two Pointers
 
+### LinkedList Pointers
+
+Core code for reverse
+
+                nxt = cur.next
+                cur.next = last
+                last = cur
+                cur = nxt
+
 ### Fast & Slow pointers
 
 
