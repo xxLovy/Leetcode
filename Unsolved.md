@@ -4,3 +4,8 @@ Sliding window
 
 [1234. Replace the Substring for Balanced String](https://leetcode.cn/problems/replace-the-substring-for-balanced-string/)
 
+
+
+Linked list
+
+[24. Swap Nodes in Pairs](https://leetcode.cn/problems/swap-nodes-in-pairs/)

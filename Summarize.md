@@ -145,6 +145,23 @@ Normally it's concerned about some sum up and used for a sorted array.
 
 ## BFS
 
+```py
+queue = deque()
+queue.append(root)
+
+layer = 1
+while queue:
+		# layer by layer
+    for _ in range(len(queue)):
+      	cur = queue.popleft()
+        if cur.left:
+          	queue.append(cur.left)
+        if cur.right:
+          	queue.append(cur.right)
+    print(f'layer: {layer}')
+    layer += 1
+```
+
 
 
 ## DFS
