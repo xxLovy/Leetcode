@@ -1,3 +1,9 @@
+## Heap
+
+heapq only has min heap. Add a `-` minus sign to make it a max heap
+
+
+
 ## Sort
 
 [912. Sort an Array](https://leetcode.com/problems/sort-an-array/)
@@ -170,20 +176,99 @@ while queue:
 
 ## Backtracking
 
-some template
+Backtracking Three Questions:
 
++ 当前操作
++ 子问题
++ 下一个子问题
+
+`dfs(i)` 表示 `>=i` 的元素还需被枚举
+
+### 子集型回溯
+
+#### 从输入的角度：
+
+每个元素选/不选
+
+```py
+class Solution:
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        ans = []
+        path = []
+
+        def dfs(i):
+            if i == len(nums):
+                ans.append(path[:])
+                return
+
+            # not choose
+            dfs(i+1)
+
+            # choose
+            path.append(nums[i])
+            dfs(i+1)
+            path.pop()
+            return
+        
+        dfs(0)
+        return ans
 ```
-Pick a starting point.
 
-while(Problem is not solved)
-    For each path from the starting point.
-        check if selected path is safe, if yes select it
-        and make recursive call to rest of the problem
-        before which undo the current move.
-    End For
+此时决策树为一个二叉树，所以要有两个dfs，但是有个dfs一直没选所以只需要回溯第二个dfs
 
-If none of the move works out, return false, NO SOLUTON.
+#### 从答案角度：
+
+枚举第一个元素选谁，第二个元素选谁...
+
+```py
+class Solution:
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        ans = []
+        path = []
+
+        def dfs(i):
+          	# record the answer
+            ans.append(path[:])
+            if i == len(nums):
+                # ans.append(path[:])
+                return
+            
+            for j in range(i, len(nums)):
+                path.append(nums[j])
+                dfs(j+1)
+                path.pop()
+
+        dfs(0)
+        return ans
 ```
+
+此时决策树为一个n叉树，所以要有n个dfs。需要先记录答案
+
+### 组合型回溯
+
+相比于子集型回溯可以进行剪枝进行一些额外优化
+
+```py
+class Solution:
+    def combine(self, n: int, k: int) -> List[List[int]]:
+        ans = []
+        path = []
+
+        def dfs(i):
+            if len(path) == k:
+                ans.append(path[:])
+                return
+            
+            for j in range(i, n+1):
+                path.append(j)
+                dfs(j+1)
+                path.pop()
+
+        dfs(1)
+        return ans
+```
+
+
 
 ## Binary Search
 

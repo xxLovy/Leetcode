@@ -36,3 +36,16 @@
 
 [1026. Maximum Difference Between Node and Ancestor](https://leetcode.cn/problems/maximum-difference-between-node-and-ancestor/)
 
+
+
+DP
+
+[2915. Length of the Longest Subsequence That Sums to Target](https://leetcode.cn/problems/length-of-the-longest-subsequence-that-sums-to-target/)
+
+[494. Target Sum](https://leetcode.cn/problems/target-sum/)
+
+[2466. Count Ways To Build Good Strings](https://leetcode.com/problems/count-ways-to-build-good-strings/)
+
+[2915. Length of the Longest Subsequence That Sums to Target](https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/)
+
+[72. Edit Distance](https://leetcode.com/problems/edit-distance/)
